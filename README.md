@@ -1,8 +1,7 @@
-# D2Server100-Reconstructed v0.4
+# D2Server1.00 Reconstructed
 
 Source-equivalent reconstruction of the accidentally shipped Diablo II 1.00 `D2Server.dll`, checked directly against the exact matching May 26, 2000 retail DLL family supplied for this project.
 
-This is **not Blizzard's original source** and is not claimed to be byte-identical. v0.4 is the first completed integrated **service-core** candidate: it reconstructs the engine-facing contract plus the D2Net/Fog/MCP/CharServ/worker lifecycle closely enough for a controlled Win32 live test.
 
 Target retail D2Server:
 
@@ -139,30 +138,5 @@ Expected ordinals:
 10003  QueryInterface
 ```
 
-## Controlled 1.00 runtime test
-
-Use the exact matching 1.00 engine family beside the reconstructed DLL, plus a `realms.ini`. A sample is under `examples/realms.ini.example`.
-
-Original service ports:
-
-- D2 game clients: TCP 4000
-- MCP: TCP 6112
-- Character Server: TCP 6113
-
-For the first test, preserve the retail DLL separately and use a disposable/test installation. Inspect `D2Server100_v0_4.log` plus any native Fog diagnostics. Verify, in order: Fog globals/ErrorManager, D2Lang/D2Common initialization, D2Net startup, D2Game #10046, MCP 6112, CharServ 6113, callback/game-data completion, worker entry, CREATE/JOIN, character load, and clean shutdown.
-
-## Deliberate remaining gaps
-
-Final v0.4 is an **integrated source candidate**, not a proven drop-in replacement. The remaining gaps are outside the v0.4 service-core boundary:
-
-- original Windows status GUI / Display.cpp and its UI-list ownership;
-- Bnclient auxiliary application-shell behavior;
-- D2Hell/Archive.cpp status and enumeration integration;
-- the original performance/status timing presentation code surrounding the service loop (the engine worker scheduler itself is reconstructed);
-- deeper semantics of some MCP status handlers, notably 0x03/0x12;
-- exact optional Fog MCP pre-dispatch table population, which is zero-filled/uninitialized in the retail image itself;
-- live Win32 proof across repeated create/join/save/leave/destroy and MCP/CharServ loss/reconnect cycles.
-
-The retail UI-list cleanup at `0x100055B0` and final release of two application-shell-owned objects at `0x10001830` remain intentionally absent because this headless reconstruction does not create those objects. The matched D2Lang/D2Common engine-global lifecycle **is** implemented.
 
 See `STATUS_v0_4_FINAL.md` and the `research/` directory for the evidence trail.
