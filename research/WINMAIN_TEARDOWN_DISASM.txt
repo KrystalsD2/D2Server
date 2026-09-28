@@ -1,0 +1,36 @@
+Retail Diablo II 1.00 D2Server.dll - WinMain core teardown
+Target SHA-256: ccaaeb7800376991482e74f4e0e2c01f16088a197d45d38f39eb16ee50c2513b
+
+Relevant retail block: VA 0x1000A102..0x1000A16D
+
+1000A102  mov eax,[100294F4]          ; active game-worker reference count
+1000A10A  mov [100296FC],1            ; set service stop flag
+1000A115  jle 1000A128
+1000A117  push 64h                    ; Sleep(100)
+1000A119  call Sleep
+1000A11F  mov eax,[100294F4]
+1000A124  test eax,eax
+1000A126  jg 1000A117                 ; wait for all workers to retire
+1000A128  mov [100296FC],0
+
+1000A132  call 1000124E -> 100055B0   ; UI/list application-shell cleanup
+1000A137  call 1000C084               ; D2Game #10040
+1000A13C  call 1000BFD0               ; D2Net  #10004
+1000A141  mov eax,[100249D4]          ; online-service/application flag
+1000A148  je 1000A154
+1000A14A  call 10001181 -> 10001AE0   ; D2Net #10018(NULL), Fog #10048(MCP)
+1000A14F  call 1000131B -> 10002BE0   ; Fog #10048 for each of 3 x 0x2C CharServ slots
+1000A154  call 1000C07E               ; D2Game #10050 (retail implementation returns 1)
+1000A159  call 1000BFFA               ; D2Common #10553 data-table/global shutdown
+1000A15E  call 1000C0A2               ; D2Lang   #10001 matching language shutdown
+1000A163  call 1000BFF4               ; D2Common #10983 ProfCore profiling dump
+1000A168  call 1000136B -> 10001830   ; release two application-shell-owned objects
+1000A16D  xor eax,eax
+1000A16F  add esp,1Ch
+1000A172  ret 10h
+
+v0.4 reconstruction decision:
+- join all reconstructed game-worker threads before teardown, source-equivalent to waiting for the retail active-worker counter;
+- reproduce D2Game #10040 -> D2Net #10004 -> D2Net #10018(NULL)/Fog destruction -> D2Game #10050 exactly;
+- reproduce the matched D2Common #10553 -> D2Lang #10001 -> D2Common #10983 lifecycle because their startup counterparts are also reconstructed;
+- omit only the UI/list cleanup at 0x100055B0 and the final 0x10001830 shell-object releases, because the headless source never creates those application-shell-owned objects.

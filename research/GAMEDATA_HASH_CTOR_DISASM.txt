@@ -1,0 +1,329 @@
+
+/mnt/data/d2server100_work/original/D2Server.dll:     file format pei-i386
+
+
+Disassembly of section .text:
+
+1000a200 <.text+0x9200>:
+1000a200:	cc                   	int3
+1000a201:	cc                   	int3
+1000a202:	cc                   	int3
+1000a203:	cc                   	int3
+1000a204:	cc                   	int3
+1000a205:	cc                   	int3
+1000a206:	cc                   	int3
+1000a207:	cc                   	int3
+1000a208:	cc                   	int3
+1000a209:	cc                   	int3
+1000a20a:	cc                   	int3
+1000a20b:	cc                   	int3
+1000a20c:	cc                   	int3
+1000a20d:	cc                   	int3
+1000a20e:	cc                   	int3
+1000a20f:	cc                   	int3
+1000a210:	cc                   	int3
+1000a211:	cc                   	int3
+1000a212:	cc                   	int3
+1000a213:	cc                   	int3
+1000a214:	cc                   	int3
+1000a215:	cc                   	int3
+1000a216:	cc                   	int3
+1000a217:	cc                   	int3
+1000a218:	cc                   	int3
+1000a219:	cc                   	int3
+1000a21a:	cc                   	int3
+1000a21b:	cc                   	int3
+1000a21c:	cc                   	int3
+1000a21d:	cc                   	int3
+1000a21e:	cc                   	int3
+1000a21f:	cc                   	int3
+1000a220:	cc                   	int3
+1000a221:	cc                   	int3
+1000a222:	cc                   	int3
+1000a223:	cc                   	int3
+1000a224:	cc                   	int3
+1000a225:	cc                   	int3
+1000a226:	cc                   	int3
+1000a227:	cc                   	int3
+1000a228:	cc                   	int3
+1000a229:	cc                   	int3
+1000a22a:	cc                   	int3
+1000a22b:	cc                   	int3
+1000a22c:	cc                   	int3
+1000a22d:	cc                   	int3
+1000a22e:	cc                   	int3
+1000a22f:	cc                   	int3
+1000a230:	cc                   	int3
+1000a231:	cc                   	int3
+1000a232:	cc                   	int3
+1000a233:	cc                   	int3
+1000a234:	cc                   	int3
+1000a235:	cc                   	int3
+1000a236:	cc                   	int3
+1000a237:	cc                   	int3
+1000a238:	cc                   	int3
+1000a239:	cc                   	int3
+1000a23a:	cc                   	int3
+1000a23b:	cc                   	int3
+1000a23c:	cc                   	int3
+1000a23d:	cc                   	int3
+1000a23e:	cc                   	int3
+1000a23f:	cc                   	int3
+1000a240:	6a ff                	push   0xffffffff
+1000a242:	68 24 d5 01 10       	push   0x1001d524
+1000a247:	64 a1 00 00 00 00    	mov    eax,fs:0x0
+1000a24d:	50                   	push   eax
+1000a24e:	64 89 25 00 00 00 00 	mov    DWORD PTR fs:0x0,esp
+1000a255:	83 ec 08             	sub    esp,0x8
+1000a258:	53                   	push   ebx
+1000a259:	56                   	push   esi
+1000a25a:	8b f1                	mov    esi,ecx
+1000a25c:	57                   	push   edi
+1000a25d:	89 74 24 0c          	mov    DWORD PTR [esp+0xc],esi
+1000a261:	8d 7e 04             	lea    edi,[esi+0x4]
+1000a264:	8b cf                	mov    ecx,edi
+1000a266:	e8 db 6d ff ff       	call   0x10001046
+1000a26b:	8d 5e 14             	lea    ebx,[esi+0x14]
+1000a26e:	c7 44 24 1c 00 00 00 	mov    DWORD PTR [esp+0x1c],0x0
+1000a275:	00 
+1000a276:	8b cb                	mov    ecx,ebx
+1000a278:	e8 e9 70 ff ff       	call   0x10001366
+1000a27d:	6a 0c                	push   0xc
+1000a27f:	8b cf                	mov    ecx,edi
+1000a281:	c6 44 24 20 01       	mov    BYTE PTR [esp+0x20],0x1
+1000a286:	c7 06 04 f0 01 10    	mov    DWORD PTR [esi],0x1001f004
+1000a28c:	c7 46 10 00 00 00 00 	mov    DWORD PTR [esi+0x10],0x0
+1000a293:	e8 ed 6f ff ff       	call   0x10001285
+1000a298:	6a 04                	push   0x4
+1000a29a:	8b cb                	mov    ecx,ebx
+1000a29c:	c7 46 24 03 00 00 00 	mov    DWORD PTR [esi+0x24],0x3
+1000a2a3:	e8 78 70 ff ff       	call   0x10001320
+1000a2a8:	33 ff                	xor    edi,edi
+1000a2aa:	33 db                	xor    ebx,ebx
+1000a2ac:	8b 4e 1c             	mov    ecx,DWORD PTR [esi+0x1c]
+1000a2af:	6a 04                	push   0x4
+1000a2b1:	03 cb                	add    ecx,ebx
+1000a2b3:	e8 cd 6f ff ff       	call   0x10001285
+1000a2b8:	8b 46 24             	mov    eax,DWORD PTR [esi+0x24]
+1000a2bb:	47                   	inc    edi
+1000a2bc:	83 c3 0c             	add    ebx,0xc
+1000a2bf:	3b f8                	cmp    edi,eax
+1000a2c1:	76 e9                	jbe    0x1000a2ac
+1000a2c3:	8d 7e 28             	lea    edi,[esi+0x28]
+1000a2c6:	c7 44 24 1c 02 00 00 	mov    DWORD PTR [esp+0x1c],0x2
+1000a2cd:	00 
+1000a2ce:	8b cf                	mov    ecx,edi
+1000a2d0:	89 7c 24 10          	mov    DWORD PTR [esp+0x10],edi
+1000a2d4:	e8 df 6e ff ff       	call   0x100011b8
+1000a2d9:	8b cf                	mov    ecx,edi
+1000a2db:	c6 44 24 1c 03       	mov    BYTE PTR [esp+0x1c],0x3
+1000a2e0:	c7 07 dd dd dd dd    	mov    DWORD PTR [edi],0xdddddddd
+1000a2e6:	e8 47 6d ff ff       	call   0x10001032
+1000a2eb:	8d 5e 38             	lea    ebx,[esi+0x38]
+1000a2ee:	c6 44 24 1c 04       	mov    BYTE PTR [esp+0x1c],0x4
+1000a2f3:	8b cb                	mov    ecx,ebx
+1000a2f5:	89 5c 24 10          	mov    DWORD PTR [esp+0x10],ebx
+1000a2f9:	e8 59 70 ff ff       	call   0x10001357
+1000a2fe:	8b cb                	mov    ecx,ebx
+1000a300:	c6 44 24 1c 05       	mov    BYTE PTR [esp+0x1c],0x5
+1000a305:	c7 03 10 00 00 00    	mov    DWORD PTR [ebx],0x10
+1000a30b:	e8 9f 6d ff ff       	call   0x100010af
+1000a310:	6a 04                	push   0x4
+1000a312:	8b cf                	mov    ecx,edi
+1000a314:	c6 44 24 20 06       	mov    BYTE PTR [esp+0x20],0x6
+1000a319:	c7 06 18 f0 01 10    	mov    DWORD PTR [esi],0x1001f018
+1000a31f:	c7 46 34 10 00 00 00 	mov    DWORD PTR [esi+0x34],0x10
+1000a326:	e8 5a 6f ff ff       	call   0x10001285
+1000a32b:	8b c6                	mov    eax,esi
+1000a32d:	8d 4e 50             	lea    ecx,[esi+0x50]
+1000a330:	f7 d0                	not    eax
+1000a332:	25 ff ff ff 0f       	and    eax,0xfffffff
+1000a337:	51                   	push   ecx
+1000a338:	c7 06 40 f0 01 10    	mov    DWORD PTR [esi],0x1001f040
+1000a33e:	89 46 48             	mov    DWORD PTR [esi+0x48],eax
+1000a341:	c7 46 4c 00 00 00 00 	mov    DWORD PTR [esi+0x4c],0x0
+1000a348:	ff 15 50 c9 02 10    	call   DWORD PTR ds:0x1002c950
+1000a34e:	8b 4c 24 14          	mov    ecx,DWORD PTR [esp+0x14]
+1000a352:	c7 06 2c f0 01 10    	mov    DWORD PTR [esi],0x1001f02c
+1000a358:	8b c6                	mov    eax,esi
+1000a35a:	5f                   	pop    edi
+1000a35b:	5e                   	pop    esi
+1000a35c:	5b                   	pop    ebx
+1000a35d:	64 89 0d 00 00 00 00 	mov    DWORD PTR fs:0x0,ecx
+1000a364:	83 c4 14             	add    esp,0x14
+1000a367:	c3                   	ret
+1000a368:	90                   	nop
+1000a369:	90                   	nop
+1000a36a:	90                   	nop
+1000a36b:	90                   	nop
+1000a36c:	90                   	nop
+1000a36d:	90                   	nop
+1000a36e:	90                   	nop
+1000a36f:	90                   	nop
+1000a370:	cc                   	int3
+1000a371:	cc                   	int3
+1000a372:	cc                   	int3
+1000a373:	cc                   	int3
+1000a374:	cc                   	int3
+1000a375:	cc                   	int3
+1000a376:	cc                   	int3
+1000a377:	cc                   	int3
+1000a378:	cc                   	int3
+1000a379:	cc                   	int3
+1000a37a:	cc                   	int3
+1000a37b:	cc                   	int3
+1000a37c:	cc                   	int3
+1000a37d:	cc                   	int3
+1000a37e:	cc                   	int3
+1000a37f:	cc                   	int3
+1000a380:	cc                   	int3
+1000a381:	cc                   	int3
+1000a382:	cc                   	int3
+1000a383:	cc                   	int3
+1000a384:	cc                   	int3
+1000a385:	cc                   	int3
+1000a386:	cc                   	int3
+1000a387:	cc                   	int3
+1000a388:	cc                   	int3
+1000a389:	cc                   	int3
+1000a38a:	cc                   	int3
+1000a38b:	cc                   	int3
+1000a38c:	cc                   	int3
+1000a38d:	cc                   	int3
+1000a38e:	cc                   	int3
+1000a38f:	cc                   	int3
+1000a390:	cc                   	int3
+1000a391:	cc                   	int3
+1000a392:	cc                   	int3
+1000a393:	cc                   	int3
+1000a394:	cc                   	int3
+1000a395:	cc                   	int3
+1000a396:	cc                   	int3
+1000a397:	cc                   	int3
+1000a398:	cc                   	int3
+1000a399:	cc                   	int3
+1000a39a:	cc                   	int3
+1000a39b:	cc                   	int3
+1000a39c:	cc                   	int3
+1000a39d:	cc                   	int3
+1000a39e:	cc                   	int3
+1000a39f:	cc                   	int3
+1000a3a0:	cc                   	int3
+1000a3a1:	cc                   	int3
+1000a3a2:	cc                   	int3
+1000a3a3:	cc                   	int3
+1000a3a4:	cc                   	int3
+1000a3a5:	cc                   	int3
+1000a3a6:	cc                   	int3
+1000a3a7:	cc                   	int3
+1000a3a8:	cc                   	int3
+1000a3a9:	cc                   	int3
+1000a3aa:	cc                   	int3
+1000a3ab:	cc                   	int3
+1000a3ac:	cc                   	int3
+1000a3ad:	cc                   	int3
+1000a3ae:	cc                   	int3
+1000a3af:	cc                   	int3
+1000a3b0:	cc                   	int3
+1000a3b1:	cc                   	int3
+1000a3b2:	cc                   	int3
+1000a3b3:	cc                   	int3
+1000a3b4:	cc                   	int3
+1000a3b5:	cc                   	int3
+1000a3b6:	cc                   	int3
+1000a3b7:	cc                   	int3
+1000a3b8:	cc                   	int3
+1000a3b9:	cc                   	int3
+1000a3ba:	cc                   	int3
+1000a3bb:	cc                   	int3
+1000a3bc:	cc                   	int3
+1000a3bd:	cc                   	int3
+1000a3be:	cc                   	int3
+1000a3bf:	cc                   	int3
+1000a3c0:	56                   	push   esi
+1000a3c1:	8b 74 24 08          	mov    esi,DWORD PTR [esp+0x8]
+1000a3c5:	8b ce                	mov    ecx,esi
+1000a3c7:	e8 52 6c ff ff       	call   0x1000101e
+1000a3cc:	6a 00                	push   0x0
+1000a3ce:	6a fe                	push   0xfffffffe
+1000a3d0:	68 08 4b 02 10       	push   0x10024b08
+1000a3d5:	56                   	push   esi
+1000a3d6:	e8 bd 16 00 00       	call   0x1000ba98
+1000a3db:	5e                   	pop    esi
+1000a3dc:	c2 04 00             	ret    0x4
+1000a3df:	90                   	nop
+1000a3e0:	cc                   	int3
+1000a3e1:	cc                   	int3
+1000a3e2:	cc                   	int3
+1000a3e3:	cc                   	int3
+1000a3e4:	cc                   	int3
+1000a3e5:	cc                   	int3
+1000a3e6:	cc                   	int3
+1000a3e7:	cc                   	int3
+1000a3e8:	cc                   	int3
+1000a3e9:	cc                   	int3
+1000a3ea:	cc                   	int3
+1000a3eb:	cc                   	int3
+1000a3ec:	cc                   	int3
+1000a3ed:	cc                   	int3
+1000a3ee:	cc                   	int3
+1000a3ef:	cc                   	int3
+1000a3f0:	8b 44 24 0c          	mov    eax,DWORD PTR [esp+0xc]
+1000a3f4:	8b 4c 24 08          	mov    ecx,DWORD PTR [esp+0x8]
+1000a3f8:	50                   	push   eax
+1000a3f9:	51                   	push   ecx
+1000a3fa:	8b 4c 24 0c          	mov    ecx,DWORD PTR [esp+0xc]
+1000a3fe:	6a 01                	push   0x1
+1000a400:	e8 50 6c ff ff       	call   0x10001055
+1000a405:	c2 0c 00             	ret    0xc
+1000a408:	90                   	nop
+1000a409:	90                   	nop
+1000a40a:	90                   	nop
+1000a40b:	90                   	nop
+1000a40c:	90                   	nop
+1000a40d:	90                   	nop
+1000a40e:	90                   	nop
+1000a40f:	90                   	nop
+1000a410:	cc                   	int3
+1000a411:	cc                   	int3
+1000a412:	cc                   	int3
+1000a413:	cc                   	int3
+1000a414:	cc                   	int3
+1000a415:	cc                   	int3
+1000a416:	cc                   	int3
+1000a417:	cc                   	int3
+1000a418:	cc                   	int3
+1000a419:	cc                   	int3
+1000a41a:	cc                   	int3
+1000a41b:	cc                   	int3
+1000a41c:	cc                   	int3
+1000a41d:	cc                   	int3
+1000a41e:	cc                   	int3
+1000a41f:	cc                   	int3
+1000a420:	56                   	push   esi
+1000a421:	8b f1                	mov    esi,ecx
+1000a423:	57                   	push   edi
+1000a424:	c7 46 10 00 00 00 00 	mov    DWORD PTR [esi+0x10],0x0
+1000a42b:	8b 46 0c             	mov    eax,DWORD PTR [esi+0xc]
+1000a42e:	85 c0                	test   eax,eax
+1000a430:	7e 0c                	jle    0x1000a43e
+1000a432:	8b 4e 04             	mov    ecx,DWORD PTR [esi+0x4]
+1000a435:	03 c8                	add    ecx,eax
+1000a437:	e8 39 6f ff ff       	call   0x10001375
+1000a43c:	eb ed                	jmp    0x1000a42b
+1000a43e:	8b 46 18             	mov    eax,DWORD PTR [esi+0x18]
+1000a441:	53                   	push   ebx
+1000a442:	33 db                	xor    ebx,ebx
+1000a444:	85 c0                	test   eax,eax
+1000a446:	76 24                	jbe    0x1000a46c
+1000a448:	33 ff                	xor    edi,edi
+1000a44a:	8b 46 1c             	mov    eax,DWORD PTR [esi+0x1c]
+1000a44d:	8d 44 38 04          	lea    eax,[eax+edi*1+0x4]
+1000a451:	8b 40 04             	mov    eax,DWORD PTR [eax+0x4]
+1000a454:	85 c0                	test   eax,eax
+1000a456:	7e 09                	jle    0x1000a461
+1000a458:	8b 16                	mov    edx,DWORD PTR [esi]
+1000a45a:	50                   	push   eax
+1000a45b:	8b ce                	mov    ecx,esi
+1000a45d:	ff 12                	call   DWORD PTR [edx]
+1000a45f:	eb                 	jmp    0x1000a44a

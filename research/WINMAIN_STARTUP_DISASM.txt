@@ -1,0 +1,61 @@
+Retail Diablo II 1.00 D2Server.dll - service-core startup map
+Target SHA-256: ccaaeb7800376991482e74f4e0e2c01f16088a197d45d38f39eb16ee50c2513b
+
+Primary retail block: VA 0x10009EB3..0x1000A045
+
+Import-thunk identities are proven from the PE IAT, not inferred from call order.
+
+10009EA7  mov ecx,1
+10009EB3  call 1000C144               ; Fog #10139, global mode = 1
+          ... Windows application shell / callback registration ...
+10009F10  mov ecx,10024D28            ; literal "D2SDebug"
+10009F15  call 1000C13E               ; Fog #10019 ErrorManager init
+10009F1A  call 10001398               ; realms.ini/config selection path
+          ...
+10009F35  call 10001226               ; returns 0 context used for D2Lang init
+10009F3A  mov ecx,eax
+10009F3C  call 1000C0A8               ; D2Lang #10000(ECX=0), result tested
+10009F49  push 0
+10009F4B  push 1
+10009F4D  call 10001226               ; returns 0
+10009F52  push eax
+10009F53  call 1000C000               ; D2Common #10554(0,1,0)
+
+10009F58  push 0
+10009F5A  push 0
+10009F5C  call 1000BFE2               ; D2Net #10003(0,0)
+10009F61  call 1000108C               ; MULTICLIENT getter (stored 0 -> 1)
+10009F66  push eax
+10009F67  call 1000BFDC               ; D2Net #10026(value)
+10009F6C  push 1
+10009F6E  call 1000BFD6               ; D2Net #10023(1)
+
+10009F73  call 1000C09C               ; D2Game #10046 runtime init
+10009F78  test online-service flag
+10009F81  call 100012EE -> 100018E0   ; MCP startup: Fog :6112, #10056, #10052,
+                                       ; control 02, framed 01, D2Net #10018 callback
+10009F86  mov ecx,[100294E8]           ; application window handle
+10009F8C  call 10001177 -> 10002850   ; starts/waits CharServ initializer 10002640;
+                                       ; creates up to three :6113 Fog clients, hello 05
+10009F91  push 10024A90               ; 12-entry server callback table
+10009F96  call 1000C096               ; D2Game #10023
+
+10009F9D  push 100296F8               ; required non-null companion pointer
+10009FA2  push 10029688               ; SGAMEDATA hash/container
+10009FA7  call 1000C090               ; D2Game #10002, ret 8
+10009FBE  call 1000C08A               ; D2Game #10039 post-game-data sync init
+
+          ... retail creates its online MCP service thread ...
+10009FEF  call 1000C138               ; Fog #10020 process/system descriptor
+10009FF4  mov eax,[eax+28h]            ; SYSTEM_INFO.dwNumberOfProcessors
+          ... create that many D2Game worker threads ...
+1000A045  call 10001023 -> 10003BA0   ; application performance/status timing init
+
+Reconstruction consequences:
+- v0.4 calls Fog #10139(1) and Fog #10019("D2SDebug");
+- it restores D2Lang/D2Common initialization before D2Net;
+- it uses the exact D2Net call order and arguments;
+- D2Game bootstrap is split: #10046 BEFORE MCP/CharServ, then #10023/#10002/#10039 AFTER transport startup;
+- initial CharServ setup may be synchronous in the headless reconstruction because retail waits for its initializer thread to complete before installing #10023;
+- Fog #10020 +0x28 supplies worker count;
+- retail QueryPerformanceCounter/status-window presentation after worker creation is outside the headless service-core boundary.

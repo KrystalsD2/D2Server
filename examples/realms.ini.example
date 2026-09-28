@@ -1,0 +1,11 @@
+[realm]
+name=RetroD2-Test
+desc=D2Server100 reconstructed v0.4 test realm
+adminpass=admin
+publicpass=public
+bnetip=127.0.0.1
+mcpip=127.0.0.1
+charserv=127.0.0.1
+accept=127.0.0.1/32
+multiclient=1
+announce=RetroD2 D2Server100 v0.4 test

@@ -1,0 +1,651 @@
+
+/mnt/data/d2server100_pass3/D2Server.dll:     file format pei-i386
+
+
+Disassembly of section .text:
+
+10005730 <.text+0x4730>:
+10005730:	a1 dc 6c 02 10       	mov    eax,ds:0x10026cdc
+10005735:	6a 05                	push   0x5
+10005737:	51                   	push   ecx
+10005738:	6a 00                	push   0x0
+1000573a:	50                   	push   eax
+1000573b:	e8 ea bb ff ff       	call   0x1000132a
+10005740:	c3                   	ret
+10005741:	90                   	nop
+10005742:	90                   	nop
+10005743:	90                   	nop
+10005744:	90                   	nop
+10005745:	90                   	nop
+10005746:	90                   	nop
+10005747:	90                   	nop
+10005748:	90                   	nop
+10005749:	90                   	nop
+1000574a:	90                   	nop
+1000574b:	90                   	nop
+1000574c:	90                   	nop
+1000574d:	90                   	nop
+1000574e:	90                   	nop
+1000574f:	90                   	nop
+10005750:	cc                   	int3
+10005751:	cc                   	int3
+10005752:	cc                   	int3
+10005753:	cc                   	int3
+10005754:	cc                   	int3
+10005755:	cc                   	int3
+10005756:	cc                   	int3
+10005757:	cc                   	int3
+10005758:	cc                   	int3
+10005759:	cc                   	int3
+1000575a:	cc                   	int3
+1000575b:	cc                   	int3
+1000575c:	cc                   	int3
+1000575d:	cc                   	int3
+1000575e:	cc                   	int3
+1000575f:	cc                   	int3
+10005760:	b8 01 00 00 00       	mov    eax,0x1
+10005765:	c3                   	ret
+10005766:	90                   	nop
+10005767:	90                   	nop
+10005768:	90                   	nop
+10005769:	90                   	nop
+1000576a:	90                   	nop
+1000576b:	90                   	nop
+1000576c:	90                   	nop
+1000576d:	90                   	nop
+1000576e:	90                   	nop
+1000576f:	90                   	nop
+10005770:	cc                   	int3
+10005771:	cc                   	int3
+10005772:	cc                   	int3
+10005773:	cc                   	int3
+10005774:	cc                   	int3
+10005775:	cc                   	int3
+10005776:	cc                   	int3
+10005777:	cc                   	int3
+10005778:	cc                   	int3
+10005779:	cc                   	int3
+1000577a:	cc                   	int3
+1000577b:	cc                   	int3
+1000577c:	cc                   	int3
+1000577d:	cc                   	int3
+1000577e:	cc                   	int3
+1000577f:	cc                   	int3
+10005780:	e8 e9 b8 ff ff       	call   0x1000106e
+10005785:	b8 01 00 00 00       	mov    eax,0x1
+1000578a:	c3                   	ret
+1000578b:	90                   	nop
+1000578c:	90                   	nop
+1000578d:	90                   	nop
+1000578e:	90                   	nop
+1000578f:	90                   	nop
+10005790:	cc                   	int3
+10005791:	cc                   	int3
+10005792:	cc                   	int3
+10005793:	cc                   	int3
+10005794:	cc                   	int3
+10005795:	cc                   	int3
+10005796:	cc                   	int3
+10005797:	cc                   	int3
+10005798:	cc                   	int3
+10005799:	cc                   	int3
+1000579a:	cc                   	int3
+1000579b:	cc                   	int3
+1000579c:	cc                   	int3
+1000579d:	cc                   	int3
+1000579e:	cc                   	int3
+1000579f:	cc                   	int3
+100057a0:	e8 f6 b8 ff ff       	call   0x1000109b
+100057a5:	b8 01 00 00 00       	mov    eax,0x1
+100057aa:	c3                   	ret
+100057ab:	90                   	nop
+100057ac:	90                   	nop
+100057ad:	90                   	nop
+100057ae:	90                   	nop
+100057af:	90                   	nop
+100057b0:	cc                   	int3
+100057b1:	cc                   	int3
+100057b2:	cc                   	int3
+100057b3:	cc                   	int3
+100057b4:	cc                   	int3
+100057b5:	cc                   	int3
+100057b6:	cc                   	int3
+100057b7:	cc                   	int3
+100057b8:	cc                   	int3
+100057b9:	cc                   	int3
+100057ba:	cc                   	int3
+100057bb:	cc                   	int3
+100057bc:	cc                   	int3
+100057bd:	cc                   	int3
+100057be:	cc                   	int3
+100057bf:	cc                   	int3
+100057c0:	e8 79 bb ff ff       	call   0x1000133e
+100057c5:	b8 01 00 00 00       	mov    eax,0x1
+100057ca:	c3                   	ret
+100057cb:	90                   	nop
+100057cc:	90                   	nop
+100057cd:	90                   	nop
+100057ce:	90                   	nop
+100057cf:	90                   	nop
+100057d0:	cc                   	int3
+100057d1:	cc                   	int3
+100057d2:	cc                   	int3
+100057d3:	cc                   	int3
+100057d4:	cc                   	int3
+100057d5:	cc                   	int3
+100057d6:	cc                   	int3
+100057d7:	cc                   	int3
+100057d8:	cc                   	int3
+100057d9:	cc                   	int3
+100057da:	cc                   	int3
+100057db:	cc                   	int3
+100057dc:	cc                   	int3
+100057dd:	cc                   	int3
+100057de:	cc                   	int3
+100057df:	cc                   	int3
+100057e0:	6a 6b                	push   0x6b
+100057e2:	68 58 3b 02 10       	push   0x10023b58
+100057e7:	68 18 3b 02 10       	push   0x10023b18
+100057ec:	e8 23 69 00 00       	call   0x1000c114
+100057f1:	83 c4 0c             	add    esp,0xc
+100057f4:	6a ff                	push   0xffffffff
+100057f6:	e8 7e 6b 00 00       	call   0x1000c379
+100057fb:	90                   	nop
+100057fc:	90                   	nop
+100057fd:	90                   	nop
+100057fe:	90                   	nop
+100057ff:	90                   	nop
+10005800:	cc                   	int3
+10005801:	cc                   	int3
+10005802:	cc                   	int3
+10005803:	cc                   	int3
+10005804:	cc                   	int3
+10005805:	cc                   	int3
+10005806:	cc                   	int3
+10005807:	cc                   	int3
+10005808:	cc                   	int3
+10005809:	cc                   	int3
+1000580a:	cc                   	int3
+1000580b:	cc                   	int3
+1000580c:	cc                   	int3
+1000580d:	cc                   	int3
+1000580e:	cc                   	int3
+1000580f:	cc                   	int3
+10005810:	b8 01 00 00 00       	mov    eax,0x1
+10005815:	c3                   	ret
+10005816:	90                   	nop
+10005817:	90                   	nop
+10005818:	90                   	nop
+10005819:	90                   	nop
+1000581a:	90                   	nop
+1000581b:	90                   	nop
+1000581c:	90                   	nop
+1000581d:	90                   	nop
+1000581e:	90                   	nop
+1000581f:	90                   	nop
+10005820:	cc                   	int3
+10005821:	cc                   	int3
+10005822:	cc                   	int3
+10005823:	cc                   	int3
+10005824:	cc                   	int3
+10005825:	cc                   	int3
+10005826:	cc                   	int3
+10005827:	cc                   	int3
+10005828:	cc                   	int3
+10005829:	cc                   	int3
+1000582a:	cc                   	int3
+1000582b:	cc                   	int3
+1000582c:	cc                   	int3
+1000582d:	cc                   	int3
+1000582e:	cc                   	int3
+1000582f:	cc                   	int3
+10005830:	51                   	push   ecx
+10005831:	56                   	push   esi
+10005832:	8b f1                	mov    esi,ecx
+10005834:	57                   	push   edi
+10005835:	83 c9 ff             	or     ecx,0xffffffff
+10005838:	8d 56 0c             	lea    edx,[esi+0xc]
+1000583b:	33 c0                	xor    eax,eax
+1000583d:	8b fa                	mov    edi,edx
+1000583f:	f2 ae                	repnz scas al,BYTE PTR es:[edi]
+10005841:	f7 d1                	not    ecx
+10005843:	49                   	dec    ecx
+10005844:	8d 44 11 01          	lea    eax,[ecx+edx*1+0x1]
+10005848:	8d 4c 24 08          	lea    ecx,[esp+0x8]
+1000584c:	51                   	push   ecx
+1000584d:	8a 4e 0b             	mov    cl,BYTE PTR [esi+0xb]
+10005850:	51                   	push   ecx
+10005851:	8a 4e 0a             	mov    cl,BYTE PTR [esi+0xa]
+10005854:	51                   	push   ecx
+10005855:	8a 4e 09             	mov    cl,BYTE PTR [esi+0x9]
+10005858:	51                   	push   ecx
+10005859:	8b 4e 05             	mov    ecx,DWORD PTR [esi+0x5]
+1000585c:	51                   	push   ecx
+1000585d:	6a 00                	push   0x0
+1000585f:	50                   	push   eax
+10005860:	52                   	push   edx
+10005861:	e8 e2 67 00 00       	call   0x1000c048
+10005866:	85 c0                	test   eax,eax
+10005868:	74 1e                	je     0x10005888
+1000586a:	8b 44 24 08          	mov    eax,DWORD PTR [esp+0x8]
+1000586e:	8b 56 01             	mov    edx,DWORD PTR [esi+0x1]
+10005871:	6a 00                	push   0x0
+10005873:	25 ff ff 00 00       	and    eax,0xffff
+10005878:	52                   	push   edx
+10005879:	50                   	push   eax
+1000587a:	e8 a6 ba ff ff       	call   0x10001325
+1000587f:	b8 01 00 00 00       	mov    eax,0x1
+10005884:	5f                   	pop    edi
+10005885:	5e                   	pop    esi
+10005886:	59                   	pop    ecx
+10005887:	c3                   	ret
+10005888:	8b 4e 01             	mov    ecx,DWORD PTR [esi+0x1]
+1000588b:	6a 01                	push   0x1
+1000588d:	51                   	push   ecx
+1000588e:	6a 00                	push   0x0
+10005890:	e8 90 ba ff ff       	call   0x10001325
+10005895:	b8 01 00 00 00       	mov    eax,0x1
+1000589a:	5f                   	pop    edi
+1000589b:	5e                   	pop    esi
+1000589c:	59                   	pop    ecx
+1000589d:	c3                   	ret
+1000589e:	90                   	nop
+1000589f:	90                   	nop
+100058a0:	cc                   	int3
+100058a1:	cc                   	int3
+100058a2:	cc                   	int3
+100058a3:	cc                   	int3
+100058a4:	cc                   	int3
+100058a5:	cc                   	int3
+100058a6:	cc                   	int3
+100058a7:	cc                   	int3
+100058a8:	cc                   	int3
+100058a9:	cc                   	int3
+100058aa:	cc                   	int3
+100058ab:	cc                   	int3
+100058ac:	cc                   	int3
+100058ad:	cc                   	int3
+100058ae:	cc                   	int3
+100058af:	cc                   	int3
+100058b0:	cc                   	int3
+100058b1:	cc                   	int3
+100058b2:	cc                   	int3
+100058b3:	cc                   	int3
+100058b4:	cc                   	int3
+100058b5:	cc                   	int3
+100058b6:	cc                   	int3
+100058b7:	cc                   	int3
+100058b8:	cc                   	int3
+100058b9:	cc                   	int3
+100058ba:	cc                   	int3
+100058bb:	cc                   	int3
+100058bc:	cc                   	int3
+100058bd:	cc                   	int3
+100058be:	cc                   	int3
+100058bf:	cc                   	int3
+100058c0:	53                   	push   ebx
+100058c1:	56                   	push   esi
+100058c2:	8b f1                	mov    esi,ecx
+100058c4:	57                   	push   edi
+100058c5:	8b 46 05             	mov    eax,DWORD PTR [esi+0x5]
+100058c8:	8b 4e 09             	mov    ecx,DWORD PTR [esi+0x9]
+100058cb:	8d 5e 11             	lea    ebx,[esi+0x11]
+100058ce:	50                   	push   eax
+100058cf:	51                   	push   ecx
+100058d0:	8b fb                	mov    edi,ebx
+100058d2:	83 c9 ff             	or     ecx,0xffffffff
+100058d5:	33 c0                	xor    eax,eax
+100058d7:	f2 ae                	repnz scas al,BYTE PTR es:[edi]
+100058d9:	8b 56 0d             	mov    edx,DWORD PTR [esi+0xd]
+100058dc:	f7 d1                	not    ecx
+100058de:	49                   	dec    ecx
+100058df:	52                   	push   edx
+100058e0:	8d 54 19 01          	lea    edx,[ecx+ebx*1+0x1]
+100058e4:	8b cb                	mov    ecx,ebx
+100058e6:	e8 e0 b9 ff ff       	call   0x100012cb
+100058eb:	8b 46 09             	mov    eax,DWORD PTR [esi+0x9]
+100058ee:	8b 56 05             	mov    edx,DWORD PTR [esi+0x5]
+100058f1:	8b 4e 01             	mov    ecx,DWORD PTR [esi+0x1]
+100058f4:	6a 00                	push   0x0
+100058f6:	50                   	push   eax
+100058f7:	e8 30 b8 ff ff       	call   0x1000112c
+100058fc:	b8 01 00 00 00       	mov    eax,0x1
+10005901:	5f                   	pop    edi
+10005902:	5e                   	pop    esi
+10005903:	5b                   	pop    ebx
+10005904:	c3                   	ret
+10005905:	90                   	nop
+10005906:	90                   	nop
+10005907:	90                   	nop
+10005908:	90                   	nop
+10005909:	90                   	nop
+1000590a:	90                   	nop
+1000590b:	90                   	nop
+1000590c:	90                   	nop
+1000590d:	90                   	nop
+1000590e:	90                   	nop
+1000590f:	90                   	nop
+10005910:	cc                   	int3
+10005911:	cc                   	int3
+10005912:	cc                   	int3
+10005913:	cc                   	int3
+10005914:	cc                   	int3
+10005915:	cc                   	int3
+10005916:	cc                   	int3
+10005917:	cc                   	int3
+10005918:	cc                   	int3
+10005919:	cc                   	int3
+1000591a:	cc                   	int3
+1000591b:	cc                   	int3
+1000591c:	cc                   	int3
+1000591d:	cc                   	int3
+1000591e:	cc                   	int3
+1000591f:	cc                   	int3
+10005920:	cc                   	int3
+10005921:	cc                   	int3
+10005922:	cc                   	int3
+10005923:	cc                   	int3
+10005924:	cc                   	int3
+10005925:	cc                   	int3
+10005926:	cc                   	int3
+10005927:	cc                   	int3
+10005928:	cc                   	int3
+10005929:	cc                   	int3
+1000592a:	cc                   	int3
+1000592b:	cc                   	int3
+1000592c:	cc                   	int3
+1000592d:	cc                   	int3
+1000592e:	cc                   	int3
+1000592f:	cc                   	int3
+10005930:	83 fa 0f             	cmp    edx,0xf
+10005933:	73 03                	jae    0x10005938
+10005935:	33 c0                	xor    eax,eax
+10005937:	c3                   	ret
+10005938:	80 39 0c             	cmp    BYTE PTR [ecx],0xc
+1000593b:	74 03                	je     0x10005940
+1000593d:	33 c0                	xor    eax,eax
+1000593f:	c3                   	ret
+10005940:	66 8b 51 0d          	mov    dx,WORD PTR [ecx+0xd]
+10005944:	8d 41 0f             	lea    eax,[ecx+0xf]
+10005947:	50                   	push   eax
+10005948:	66 8b 41 09          	mov    ax,WORD PTR [ecx+0x9]
+1000594c:	52                   	push   edx
+1000594d:	66 8b 51 0b          	mov    dx,WORD PTR [ecx+0xb]
+10005951:	50                   	push   eax
+10005952:	8d 41 05             	lea    eax,[ecx+0x5]
+10005955:	8b 49 01             	mov    ecx,DWORD PTR [ecx+0x1]
+10005958:	52                   	push   edx
+10005959:	50                   	push   eax
+1000595a:	51                   	push   ecx
+1000595b:	e8 ee 66 00 00       	call   0x1000c04e
+10005960:	b8 01 00 00 00       	mov    eax,0x1
+10005965:	c3                   	ret
+10005966:	90                   	nop
+10005967:	90                   	nop
+10005968:	90                   	nop
+10005969:	90                   	nop
+1000596a:	90                   	nop
+1000596b:	90                   	nop
+1000596c:	90                   	nop
+1000596d:	90                   	nop
+1000596e:	90                   	nop
+1000596f:	90                   	nop
+10005970:	cc                   	int3
+10005971:	cc                   	int3
+10005972:	cc                   	int3
+10005973:	cc                   	int3
+10005974:	cc                   	int3
+10005975:	cc                   	int3
+10005976:	cc                   	int3
+10005977:	cc                   	int3
+10005978:	cc                   	int3
+10005979:	cc                   	int3
+1000597a:	cc                   	int3
+1000597b:	cc                   	int3
+1000597c:	cc                   	int3
+1000597d:	cc                   	int3
+1000597e:	cc                   	int3
+1000597f:	cc                   	int3
+10005980:	83 fa 0f             	cmp    edx,0xf
+10005983:	73 03                	jae    0x10005988
+10005985:	33 c0                	xor    eax,eax
+10005987:	c3                   	ret
+10005988:	80 39 0d             	cmp    BYTE PTR [ecx],0xd
+1000598b:	74 03                	je     0x10005990
+1000598d:	33 c0                	xor    eax,eax
+1000598f:	c3                   	ret
+10005990:	66 8b 51 0d          	mov    dx,WORD PTR [ecx+0xd]
+10005994:	8d 41 0f             	lea    eax,[ecx+0xf]
+10005997:	50                   	push   eax
+10005998:	66 8b 41 09          	mov    ax,WORD PTR [ecx+0x9]
+1000599c:	52                   	push   edx
+1000599d:	66 8b 51 0b          	mov    dx,WORD PTR [ecx+0xb]
+100059a1:	50                   	push   eax
+100059a2:	8d 41 05             	lea    eax,[ecx+0x5]
+100059a5:	8b 49 01             	mov    ecx,DWORD PTR [ecx+0x1]
+100059a8:	52                   	push   edx
+100059a9:	50                   	push   eax
+100059aa:	51                   	push   ecx
+100059ab:	e8 a4 66 00 00       	call   0x1000c054
+100059b0:	b8 01 00 00 00       	mov    eax,0x1
+100059b5:	c3                   	ret
+100059b6:	90                   	nop
+100059b7:	90                   	nop
+100059b8:	90                   	nop
+100059b9:	90                   	nop
+100059ba:	90                   	nop
+100059bb:	90                   	nop
+100059bc:	90                   	nop
+100059bd:	90                   	nop
+100059be:	90                   	nop
+100059bf:	90                   	nop
+100059c0:	cc                   	int3
+100059c1:	cc                   	int3
+100059c2:	cc                   	int3
+100059c3:	cc                   	int3
+100059c4:	cc                   	int3
+100059c5:	cc                   	int3
+100059c6:	cc                   	int3
+100059c7:	cc                   	int3
+100059c8:	cc                   	int3
+100059c9:	cc                   	int3
+100059ca:	cc                   	int3
+100059cb:	cc                   	int3
+100059cc:	cc                   	int3
+100059cd:	cc                   	int3
+100059ce:	cc                   	int3
+100059cf:	cc                   	int3
+100059d0:	81 fa 89 00 00 00    	cmp    edx,0x89
+100059d6:	74 03                	je     0x100059db
+100059d8:	33 c0                	xor    eax,eax
+100059da:	c3                   	ret
+100059db:	80 39 0f             	cmp    BYTE PTR [ecx],0xf
+100059de:	74 03                	je     0x100059e3
+100059e0:	33 c0                	xor    eax,eax
+100059e2:	c3                   	ret
+100059e3:	b8 f8 94 02 10       	mov    eax,0x100294f8
+100059e8:	41                   	inc    ecx
+100059e9:	8b 11                	mov    edx,DWORD PTR [ecx]
+100059eb:	83 c1 08             	add    ecx,0x8
+100059ee:	89 10                	mov    DWORD PTR [eax],edx
+100059f0:	8b 51 fc             	mov    edx,DWORD PTR [ecx-0x4]
+100059f3:	89 50 04             	mov    DWORD PTR [eax+0x4],edx
+100059f6:	83 c0 08             	add    eax,0x8
+100059f9:	3d 80 95 02 10       	cmp    eax,0x10029580
+100059fe:	7c e9                	jl     0x100059e9
+10005a00:	b8 01 00 00 00       	mov    eax,0x1
+10005a05:	c3                   	ret
+10005a06:	90                   	nop
+10005a07:	90                   	nop
+10005a08:	90                   	nop
+10005a09:	90                   	nop
+10005a0a:	90                   	nop
+10005a0b:	90                   	nop
+10005a0c:	90                   	nop
+10005a0d:	90                   	nop
+10005a0e:	90                   	nop
+10005a0f:	90                   	nop
+10005a10:	cc                   	int3
+10005a11:	cc                   	int3
+10005a12:	cc                   	int3
+10005a13:	cc                   	int3
+10005a14:	cc                   	int3
+10005a15:	cc                   	int3
+10005a16:	cc                   	int3
+10005a17:	cc                   	int3
+10005a18:	cc                   	int3
+10005a19:	cc                   	int3
+10005a1a:	cc                   	int3
+10005a1b:	cc                   	int3
+10005a1c:	cc                   	int3
+10005a1d:	cc                   	int3
+10005a1e:	cc                   	int3
+10005a1f:	cc                   	int3
+10005a20:	81 ec 00 01 00 00    	sub    esp,0x100
+10005a26:	83 fa 09             	cmp    edx,0x9
+10005a29:	56                   	push   esi
+10005a2a:	8b f1                	mov    esi,ecx
+10005a2c:	77 0a                	ja     0x10005a38
+10005a2e:	33 c0                	xor    eax,eax
+10005a30:	5e                   	pop    esi
+10005a31:	81 c4 00 01 00 00    	add    esp,0x100
+10005a37:	c3                   	ret
+10005a38:	80 3e 12             	cmp    BYTE PTR [esi],0x12
+10005a3b:	74 0a                	je     0x10005a47
+10005a3d:	33 c0                	xor    eax,eax
+10005a3f:	5e                   	pop    esi
+10005a40:	81 c4 00 01 00 00    	add    esp,0x100
+10005a46:	c3                   	ret
+10005a47:	8d 46 09             	lea    eax,[esi+0x9]
+10005a4a:	8d 4c 24 04          	lea    ecx,[esp+0x4]
+10005a4e:	50                   	push   eax
+10005a4f:	68 88 3b 02 10       	push   0x10023b88
+10005a54:	68 00 01 00 00       	push   0x100
+10005a59:	51                   	push   ecx
+10005a5a:	e8 4b 60 00 00       	call   0x1000baaa
+10005a5f:	8b 46 05             	mov    eax,DWORD PTR [esi+0x5]
+10005a62:	8b 4e 01             	mov    ecx,DWORD PTR [esi+0x1]
+10005a65:	83 c4 10             	add    esp,0x10
+10005a68:	8d 54 24 04          	lea    edx,[esp+0x4]
+10005a6c:	52                   	push   edx
+10005a6d:	50                   	push   eax
+10005a6e:	51                   	push   ecx
+10005a6f:	e8 98 65 00 00       	call   0x1000c00c
+10005a74:	b8 01 00 00 00       	mov    eax,0x1
+10005a79:	5e                   	pop    esi
+10005a7a:	81 c4 00 01 00 00    	add    esp,0x100
+10005a80:	c3                   	ret
+10005a81:	90                   	nop
+10005a82:	90                   	nop
+10005a83:	90                   	nop
+10005a84:	90                   	nop
+10005a85:	90                   	nop
+10005a86:	90                   	nop
+10005a87:	90                   	nop
+10005a88:	90                   	nop
+10005a89:	90                   	nop
+10005a8a:	90                   	nop
+10005a8b:	90                   	nop
+10005a8c:	90                   	nop
+10005a8d:	90                   	nop
+10005a8e:	90                   	nop
+10005a8f:	90                   	nop
+10005a90:	cc                   	int3
+10005a91:	cc                   	int3
+10005a92:	cc                   	int3
+10005a93:	cc                   	int3
+10005a94:	cc                   	int3
+10005a95:	cc                   	int3
+10005a96:	cc                   	int3
+10005a97:	cc                   	int3
+10005a98:	cc                   	int3
+10005a99:	cc                   	int3
+10005a9a:	cc                   	int3
+10005a9b:	cc                   	int3
+10005a9c:	cc                   	int3
+10005a9d:	cc                   	int3
+10005a9e:	cc                   	int3
+10005a9f:	cc                   	int3
+10005aa0:	cc                   	int3
+10005aa1:	cc                   	int3
+10005aa2:	cc                   	int3
+10005aa3:	cc                   	int3
+10005aa4:	cc                   	int3
+10005aa5:	cc                   	int3
+10005aa6:	cc                   	int3
+10005aa7:	cc                   	int3
+10005aa8:	cc                   	int3
+10005aa9:	cc                   	int3
+10005aaa:	cc                   	int3
+10005aab:	cc                   	int3
+10005aac:	cc                   	int3
+10005aad:	cc                   	int3
+10005aae:	cc                   	int3
+10005aaf:	cc                   	int3
+10005ab0:	83 fa 09             	cmp    edx,0x9
+10005ab3:	74 03                	je     0x10005ab8
+10005ab5:	33 c0                	xor    eax,eax
+10005ab7:	c3                   	ret
+10005ab8:	80 39 13             	cmp    BYTE PTR [ecx],0x13
+10005abb:	74 03                	je     0x10005ac0
+10005abd:	33 c0                	xor    eax,eax
+10005abf:	c3                   	ret
+10005ac0:	e8 c6 b6 ff ff       	call   0x1000118b
+10005ac5:	b8 01 00 00 00       	mov    eax,0x1
+10005aca:	c3                   	ret
+10005acb:	90                   	nop
+10005acc:	90                   	nop
+10005acd:	90                   	nop
+10005ace:	90                   	nop
+10005acf:	90                   	nop
+10005ad0:	cc                   	int3
+10005ad1:	cc                   	int3
+10005ad2:	cc                   	int3
+10005ad3:	cc                   	int3
+10005ad4:	cc                   	int3
+10005ad5:	cc                   	int3
+10005ad6:	cc                   	int3
+10005ad7:	cc                   	int3
+10005ad8:	cc                   	int3
+10005ad9:	cc                   	int3
+10005ada:	cc                   	int3
+10005adb:	cc                   	int3
+10005adc:	cc                   	int3
+10005add:	cc                   	int3
+10005ade:	cc                   	int3
+10005adf:	cc                   	int3
+10005ae0:	51                   	push   ecx
+10005ae1:	57                   	push   edi
+10005ae2:	33 ff                	xor    edi,edi
+10005ae4:	85 d2                	test   edx,edx
+10005ae6:	77 05                	ja     0x10005aed
+10005ae8:	33 c0                	xor    eax,eax
+10005aea:	5f                   	pop    edi
+10005aeb:	59                   	pop    ecx
+10005aec:	c3                   	ret
+10005aed:	8a 01                	mov    al,BYTE PTR [ecx]
+10005aef:	3c 14                	cmp    al,0x14
+10005af1:	88 44 24 04          	mov    BYTE PTR [esp+0x4],al
+10005af5:	72 05                	jb     0x10005afc
+10005af7:	33 c0                	xor    eax,eax
+10005af9:	5f                   	pop    edi
+10005afa:	59                   	pop    ecx
+10005afb:	c3                   	ret
+10005afc:	8b 44 24 04          	mov    eax,DWORD PTR [esp+0x4]
+10005b00:	56                   	push   esi
+10005b01:	25 ff 00 00 00       	and    eax,0xff
+10005b06:	8b 34 85 b8 3a 02 10 	mov    esi,DWORD PTR [eax*4+0x10023ab8]
+10005b0d:	85 f6                	test   esi,esi
+10005b0f:	74 04                	je     0x10005b15
+10005b11:	ff d6                	call   esi
+10005b13:	8b f8                	mov    edi,eax
+10005b15:	8b c7                	mov    eax,edi
+10005b17:	5e                   	pop    esi
+10005b18:	5f                   	pop    edi
+10005b19:	59                   	pop    ecx
+10005b1a:	c3                   	ret
+10005b1b:	90                   	nop
+10005b1c:	90                   	nop
+10005b1d:	90                   	nop
+10005b1e:	90                   	nop
+10005b1f:	90                   	nop

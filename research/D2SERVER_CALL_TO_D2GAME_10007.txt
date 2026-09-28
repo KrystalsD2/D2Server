@@ -1,0 +1,61 @@
+1887-10001cd1:	cc                   	int3
+1888-10001cd2:	cc                   	int3
+1889-10001cd3:	cc                   	int3
+1890-10001cd4:	cc                   	int3
+1891-10001cd5:	cc                   	int3
+1892-10001cd6:	cc                   	int3
+1893-10001cd7:	cc                   	int3
+1894-10001cd8:	cc                   	int3
+1895-10001cd9:	cc                   	int3
+1896-10001cda:	cc                   	int3
+1897-10001cdb:	cc                   	int3
+1898-10001cdc:	cc                   	int3
+1899-10001cdd:	cc                   	int3
+1900-10001cde:	cc                   	int3
+1901-10001cdf:	cc                   	int3
+1902-10001ce0:	8b 41 0d             	mov    eax,DWORD PTR [ecx+0xd]
+1903-10001ce3:	66 8b 51 0b          	mov    dx,WORD PTR [ecx+0xb]
+1904-10001ce7:	50                   	push   eax
+1905-10001ce8:	66 8b 41 09          	mov    ax,WORD PTR [ecx+0x9]
+1906-10001cec:	52                   	push   edx
+1907-10001ced:	50                   	push   eax
+1908-10001cee:	8b 41 05             	mov    eax,DWORD PTR [ecx+0x5]
+1909-10001cf1:	8d 51 11             	lea    edx,[ecx+0x11]
+1910-10001cf4:	52                   	push   edx
+1911-10001cf5:	50                   	push   eax
+1912:10001cf6:	e8 0b a3 00 00       	call   0x1000c006
+1913-10001cfb:	b8 01 00 00 00       	mov    eax,0x1
+1914-10001d00:	c3                   	ret
+1915-10001d01:	90                   	nop
+1916-10001d02:	90                   	nop
+1917-10001d03:	90                   	nop
+1918-10001d04:	90                   	nop
+1919-10001d05:	90                   	nop
+1920-10001d06:	90                   	nop
+1921-10001d07:	90                   	nop
+1922-10001d08:	90                   	nop
+1923-10001d09:	90                   	nop
+1924-10001d0a:	90                   	nop
+1925-10001d0b:	90                   	nop
+1926-10001d0c:	90                   	nop
+1927-10001d0d:	90                   	nop
+1928-10001d0e:	90                   	nop
+1929-10001d0f:	90                   	nop
+1930-10001d10:	cc                   	int3
+1931-10001d11:	cc                   	int3
+1932-10001d12:	cc                   	int3
+1933-10001d13:	cc                   	int3
+1934-10001d14:	cc                   	int3
+1935-10001d15:	cc                   	int3
+1936-10001d16:	cc                   	int3
+1937-10001d17:	cc                   	int3
+1938-10001d18:	cc                   	int3
+1939-10001d19:	cc                   	int3
+1940-10001d1a:	cc                   	int3
+1941-10001d1b:	cc                   	int3
+1942-10001d1c:	cc                   	int3
+1943-10001d1d:	cc                   	int3
+1944-10001d1e:	cc                   	int3
+1945-10001d1f:	cc                   	int3
+1946-10001d20:	b8 01 00 00 00       	mov    eax,0x1
+1947-10001d25:	c3                   	ret

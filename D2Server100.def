@@ -1,0 +1,5 @@
+LIBRARY D2Server
+EXPORTS
+    D2Server_Export10001 @10001 NONAME
+    D2Server_Export10002 @10002 NONAME
+    QueryInterface      @10003
