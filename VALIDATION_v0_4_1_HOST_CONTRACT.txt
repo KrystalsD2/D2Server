@@ -1,0 +1,21 @@
+D2Server100-Reconstructed v0.4.1 host-contract validation
+
+Baseline: user-supplied git.zip, HEAD 3a13056 (Update README.md)
+Retail evidence: supplied Diablo II 1.00 Game.exe + D2Server100.dll
+
+Corrections validated:
+- QueryInterface slot 0 now consumes GameStartupConfig100* in ECX, not const char*.
+- GameStartupConfig100 size = 0x376.
+- Retail-consumed offsets modeled: BNETIP +0x46, MCPIP +0x5E, DEBUG.LOG +0x1EE.
+- MCPIP ASCII "0" gates off Blizzard MCP(:6112)+CharServ(:6113) startup/teardown.
+- Common D2Game bootstrap/workers remain outside that gate.
+- realms.ini mcpip overrides Game.exe MCPIP default when present.
+- D2Common #10980 DEBUG.LOG register-ABI hook restored.
+- adminpass/publicpass retained as parsed parity fields; no service-core auth use claimed.
+- bnetip retained as required realm field; no GS->BNCS socket use claimed.
+- PvPGN ports explicitly separated: D2GS->D2CS :6113, D2GS->D2DBS :6114.
+
+Portable Release: 11/11 PASS
+Strict -Wall -Wextra -Wpedantic: 11/11 PASS, 0 warnings
+ASAN+UBSAN: 11/11 PASS
+Release assert-harness bug corrected with -UNDEBUG for test targets.

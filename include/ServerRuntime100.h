@@ -3,6 +3,7 @@
 #include <atomic>
 namespace d2server100 {
 struct D2NetApi100;
+struct GameStartupConfig100;
 class FogTransport100;
 
 // Exact May-26-2000 WinMain D2Net startup sequence:
@@ -12,9 +13,9 @@ bool InitializeD2Net100(D2NetApi100& net, u32 multiclient) noexcept;
 // Retail 1.00 owned teardown order after all game workers have exited:
 //   D2Game #10040 -> D2Net #10004 -> MCP/CharServ Fog destruction -> D2Game #10050
 //   -> D2Common #10553 -> D2Lang #10001 -> D2Common #10983 profiler dump.
-void ShutdownServerRuntime100(D2NetApi100& net, FogTransport100& transport) noexcept;
+void ShutdownServerRuntime100(D2NetApi100& net, FogTransport100& transport, bool onlineTransportStarted=true) noexcept;
 
-int RunServer100(const char* commandLine) noexcept;
+int RunServer100(const GameStartupConfig100* startupConfig) noexcept;
 void RequestServerStop100(const char* reason=nullptr) noexcept;
 bool ServerStopRequested100() noexcept;
 }

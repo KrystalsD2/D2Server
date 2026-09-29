@@ -2,11 +2,12 @@
 #include "Compat.h"
 #include "D2GameApi.h"
 #include "PlayerToken.h"
+#include "GameStartupConfig100.h"
 #include <array>
 
 namespace d2server100 {
 using McpHandler100 = int (D2_FASTCALL *)(const u8* packet,u32 length);
-using ServerStart100 = int (D2_FASTCALL *)(const char* commandLine);
+using ServerStart100 = int (D2_FASTCALL *)(const GameStartupConfig100* startupConfig);
 using PacketSendFunction = bool (*)(const void* packet,std::size_t length);
 using EventLogFunction = void (*)(const char* text);
 
@@ -33,7 +34,7 @@ struct RuntimeBindings100 {
 RuntimeBindings100& bindings() noexcept;
 PlayerTokenStore& playerTokens() noexcept;
 const D2ServerInterface100& interfaceTable() noexcept;
-int D2_FASTCALL ServerStartAdapter(const char* commandLine);
+int D2_FASTCALL ServerStartAdapter(const GameStartupConfig100* startupConfig);
 int D2_FASTCALL DispatchFromMcp(const u8* packet,u32 length);
 void logLine(const char* text) noexcept;
 }

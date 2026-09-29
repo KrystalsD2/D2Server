@@ -32,6 +32,7 @@ bool D2CommonApi100::resolve(const char* moduleName) noexcept {
     };
     ord10554 = reinterpret_cast<Ord10554_InitializeDataTables>(byOrd(10554));
     ord10553 = reinterpret_cast<Ord10553_ShutdownDataTables>(byOrd(10553));
+    ord10980 = reinterpret_cast<Ord10980_SetDebugLogRaw>(byOrd(10980));
     ord10983 = reinterpret_cast<Ord10983_DumpProfiler>(byOrd(10983));
     if (!ready()) { release(); return false; }
     return true;
@@ -45,6 +46,7 @@ void D2CommonApi100::release() noexcept {
     module = nullptr;
     ord10554 = nullptr;
     ord10553 = nullptr;
+    ord10980 = nullptr;
     ord10983 = nullptr;
 }
 
@@ -72,6 +74,26 @@ void D2LangApi100::release() noexcept {
     module = nullptr;
     ord10000 = nullptr;
     ord10001 = nullptr;
+}
+
+bool SetD2CommonDebugLog100(bool enabled) noexcept {
+    auto& common=d2commonApi100();
+    if (!common.module && !common.resolve()) return false;
+    if (!common.ord10980) return false;
+#if defined(_MSC_VER) && defined(_M_IX86)
+    auto fn=common.ord10980;
+    const u32 value=enabled ? 1u : 0u;
+    __asm {
+        mov ecx, value
+        call fn
+    }
+    return true;
+#else
+    // #10980 is a register-argument export. Portable verification locks the
+    // state decision but deliberately does not call it with a fake stack ABI.
+    (void)enabled;
+    return true;
+#endif
 }
 
 bool InitializeEngineGlobals100() noexcept {

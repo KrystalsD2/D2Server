@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(D2Server100Reconstructed VERSION 0.4 LANGUAGES CXX)
+project(D2Server100Reconstructed VERSION 0.4.1 LANGUAGES CXX)
 find_package(Threads REQUIRED)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -13,6 +13,7 @@ set(CORE_SOURCES
     src/FogTransport100.cpp
     src/RealmConfig100.cpp
     src/GameWorker100.cpp
+    src/GameStartupConfig100.cpp
     src/ServerRuntime100.cpp
     src/Diagnostics100.cpp
     src/StormApi100.cpp
@@ -47,6 +48,23 @@ add_executable(engine_globals_tests tests/engine_globals_tests.cpp)
 target_link_libraries(engine_globals_tests PRIVATE d2server100_core)
 add_executable(startup_phase_tests tests/startup_phase_tests.cpp)
 target_link_libraries(startup_phase_tests PRIVATE d2server100_core)
+add_executable(game_startup_config100_tests tests/game_startup_config100_tests.cpp)
+target_link_libraries(game_startup_config100_tests PRIVATE d2server100_core)
+
+# The portable regression suite intentionally uses assert() as its compact
+# test oracle. Keep assertions enabled in Release so setup calls embedded in
+# assert expressions do not disappear.
+set(D2SERVER100_TEST_TARGETS
+    token_tests layout_tests bridge_tests realm_config_tests worker_tests
+    transport_tests d2net_startup_tests teardown_tests engine_globals_tests
+    startup_phase_tests game_startup_config100_tests)
+foreach(test_target IN LISTS D2SERVER100_TEST_TARGETS)
+    if(MSVC)
+        target_compile_options(${test_target} PRIVATE /UNDEBUG)
+    else()
+        target_compile_options(${test_target} PRIVATE -UNDEBUG)
+    endif()
+endforeach()
 
 enable_testing()
 add_test(NAME player_tokens COMMAND token_tests)
@@ -59,6 +77,7 @@ add_test(NAME d2net_startup COMMAND d2net_startup_tests)
 add_test(NAME teardown_order COMMAND teardown_tests)
 add_test(NAME engine_globals COMMAND engine_globals_tests)
 add_test(NAME startup_phases COMMAND startup_phase_tests)
+add_test(NAME game_startup_config_100 COMMAND game_startup_config100_tests)
 
 if(WIN32)
     add_library(D2Server SHARED ${CORE_SOURCES} src/DllMain.cpp src/Exports.cpp D2Server100.def)

@@ -15,8 +15,12 @@ struct AcceptRule100 {
 struct RealmConfigEntry100 {
     std::string name;
     std::string desc;
+    // Parsed/stored by retail 1.00, but no service-core read or MCP auth use
+    // has been found. Preserve for parity; do not treat as GS credentials.
     std::string adminPass;
     std::string publicPass;
+    // Required by selected realm parsing, but no GS->BNCS socket consumer is
+    // proven in retail D2Server.dll.
     std::string bnetIp;
     std::string mcpIp;
     std::array<std::string,3> charServers{};

@@ -9,8 +9,10 @@ RuntimeBindings100& bindings() noexcept { static RuntimeBindings100 v{}; return 
 PlayerTokenStore& playerTokens() noexcept { static PlayerTokenStore v{}; return v; }
 void logLine(const char* text) noexcept { if (bindings().log) bindings().log(text); else DiagnosticLog100(text); }
 
-int D2_FASTCALL ServerStartAdapter(const char* commandLine) {
-    return RunServer100(commandLine);
+int D2_FASTCALL ServerStartAdapter(const GameStartupConfig100* startupConfig) {
+    // Retail Game.exe 1.00 calls QueryInterface slot 0 with its parsed 0x376-byte
+    // startup object in ECX. This is not a raw command-line pointer.
+    return RunServer100(startupConfig);
 }
 
 const D2ServerInterface100& interfaceTable() noexcept {
